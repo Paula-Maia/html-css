@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinanmica</h1>
+    <p> tente abrir esse site em vários dispositivos</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p> vamos escutar músicas</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="#" type="audio/mpeg">
+
+        <p>Infelizmente seu nanegador nao consegue reproduzir o áudio. <a href="#">baixe o áudio mp3 aqui</a></p>
+    </audio>
+    
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor</p>
+    <!--é importante que a ordem dos videos seja pelo tamanho dos kb( do menor para o maior)-->
+    <video width="500" poster="#" controls>
+        <source src="#" type="video/mp4">
+
+        <p> Seu navegador náo tem compatibilidade com a reprodução do vídeo</p>
+
+    </video>
+    
+</body>
+</html>
